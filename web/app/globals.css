@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --bg: #060a0f;
+  --panel: #0d1520;
+  --border: rgba(167, 139, 250, 0.12);
+  --ink: #e2eaf4;
+  --muted: #6b8499;
+  --accent: #a78bfa;
+  --green: #22c55e;
+  --amber: #fbbf24;
+  --red: #f87171;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
